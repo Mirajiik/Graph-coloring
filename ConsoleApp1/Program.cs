@@ -196,14 +196,11 @@ namespace ConsoleApp1
                         Console.WriteLine("Введите способ генерации:\n1 - случайная генерация\n2 - лучший случай (заполнения нулями)\n3 - худший случай (заполнение единицами)");
                         switch (Console.ReadLine().Trim())
                         {
-                            case "1":
-                                graph = Generation(n);
+                            case "1": graph = Generation(n);
                                 break;
-                            case "2":
-                                graph = BestGeneration(n);
+                            case "2": graph = BestGeneration(n);
                                 break;
-                            case "3":
-                                graph = BadGeneration(n);
+                            case "3": graph = BadGeneration(n);
                                 break;
                             default:
                                 break;
